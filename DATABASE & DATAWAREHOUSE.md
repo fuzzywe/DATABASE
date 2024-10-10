@@ -3,7 +3,7 @@ Last Updated : 11 Sep, 2024
 Organizations employ a variety of solutions in the field of data management to efficiently handle and analyze data. The Data Warehouse and Database System are two examples of such essential systems. Although both systems handle and store data, their functions and task-specific optimizations vary. While the Data Warehouse is made for evaluating massive amounts of data to aid in decision-making, the Database System is usually employed for routine tasks including transactional processing. To choose the best instrument for your data management requirements, it is essential that you comprehend the distinctions between these two platforms.
 
 What is a Database System?
-Database System is used in the traditional way of storing and retrieving data. The major task of a database system is to perform query processing. These systems are generally referred to as online transaction processing systems. These systems are used in the day-to-day operations of any organization.
+Database System is used in the traditional way of storing and retrieving data. The major task of a database system is to perform query processing. These systems are generally referred to as online transaction processing systems. These systems are used in the day-to-day operations of any organization. 
 
 Advantages of a Database System
 Supports Operational Processes: Efficiently handles daily operations by capturing and maintaining real-time data.
