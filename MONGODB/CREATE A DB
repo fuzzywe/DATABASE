@@ -1,0 +1,143 @@
+Designing a database for a canteen management system involves identifying the key entities, relationships, and data requirements to ensure efficient management of orders, inventory, billing, and user information. Here’s a general outline of how to approach it.
+
+---
+
+### Database Requirements for Canteen Management System
+
+1. **User Management**: Track customers, staff, and admins with their roles and permissions.
+2. **Menu Management**: Store information about available items, prices, categories (e.g., beverages, snacks), and item availability.
+3. **Order Management**: Capture order details, including items ordered, quantities, order status, timestamps, and payment information.
+4. **Inventory Management**: Manage stock levels of ingredients and track when to reorder.
+5. **Billing**: Generate bills for completed orders, including tax, discounts, and payment methods.
+6. **Feedback**: Collect customer feedback on orders and services.
+
+---
+
+### Entity-Relationship Diagram (ERD)
+
+The primary entities in the database design could be:
+
+1. **Users** - to store information about customers, staff, and administrators.
+2. **Menu_Items** - representing each item available in the canteen.
+3. **Orders** - storing information about each order placed.
+4. **Order_Items** - a join table to store items included in each order.
+5. **Inventory** - managing ingredients, quantities, and restock information.
+6. **Billing** - recording payments, amounts, discounts, and receipts.
+7. **Feedback** - storing customer feedback.
+
+### Database Tables Design
+
+---
+
+#### 1. `Users` Table
+
+| Field          | Type         | Description                     |
+|----------------|--------------|---------------------------------|
+| user_id        | INT (PK)     | Unique ID for each user        |
+| name           | VARCHAR      | Name of the user               |
+| role           | ENUM         | Role (Customer, Staff, Admin)  |
+| contact_info   | VARCHAR      | Contact number or email        |
+| registration_date | DATE      | Date of registration           |
+
+---
+
+#### 2. `Menu_Items` Table
+
+| Field          | Type         | Description                      |
+|----------------|--------------|----------------------------------|
+| item_id        | INT (PK)     | Unique ID for each menu item    |
+| name           | VARCHAR      | Name of the item                |
+| category       | ENUM         | Category (e.g., Beverage, Snack)|
+| price          | DECIMAL      | Price of the item               |
+| availability   | BOOLEAN      | Indicates if the item is available |
+
+---
+
+#### 3. `Orders` Table
+
+| Field          | Type         | Description                      |
+|----------------|--------------|----------------------------------|
+| order_id       | INT (PK)     | Unique ID for each order        |
+| user_id        | INT (FK)     | ID of the user who placed order |
+| order_date     | TIMESTAMP    | Date and time of the order      |
+| status         | ENUM         | Status (Pending, Completed, Cancelled) |
+| total_amount   | DECIMAL      | Total amount for the order      |
+
+---
+
+#### 4. `Order_Items` Table (Join Table)
+
+| Field          | Type         | Description                     |
+|----------------|--------------|---------------------------------|
+| order_item_id  | INT (PK)     | Unique ID for each record      |
+| order_id       | INT (FK)     | ID of the order                |
+| item_id        | INT (FK)     | ID of the menu item            |
+| quantity       | INT          | Quantity of the item ordered   |
+
+---
+
+#### 5. `Inventory` Table
+
+| Field          | Type         | Description                     |
+|----------------|--------------|---------------------------------|
+| ingredient_id  | INT (PK)     | Unique ID for each ingredient  |
+| name           | VARCHAR      | Name of the ingredient         |
+| quantity_in_stock | INT       | Quantity available in stock    |
+| reorder_level  | INT          | Minimum quantity before reorder|
+| supplier_info  | VARCHAR      | Supplier details               |
+
+---
+
+#### 6. `Billing` Table
+
+| Field          | Type         | Description                      |
+|----------------|--------------|----------------------------------|
+| bill_id        | INT (PK)     | Unique ID for each bill         |
+| order_id       | INT (FK)     | ID of the associated order      |
+| payment_method | ENUM         | Method (Cash, Card, Online)     |
+| discount       | DECIMAL      | Discount applied, if any        |
+| tax            | DECIMAL      | Tax amount                      |
+| total_paid     | DECIMAL      | Final amount paid               |
+| payment_status | ENUM         | Status (Paid, Unpaid)           |
+
+---
+
+#### 7. `Feedback` Table
+
+| Field          | Type         | Description                     |
+|----------------|--------------|---------------------------------|
+| feedback_id    | INT (PK)     | Unique ID for each feedback    |
+| user_id        | INT (FK)     | ID of the user providing feedback |
+| order_id       | INT (FK)     | ID of the associated order     |
+| rating         | INT          | Rating out of 5                |
+| comments       | TEXT         | Additional comments            |
+| feedback_date  | TIMESTAMP    | Date and time of feedback      |
+
+---
+
+### Example Queries
+
+- **Insert a new order**:
+  ```sql
+  INSERT INTO Orders (user_id, order_date, status, total_amount)
+  VALUES (1, NOW(), 'Pending', 150.00);
+  ```
+
+- **Get all available menu items**:
+  ```sql
+  SELECT * FROM Menu_Items WHERE availability = TRUE;
+  ```
+
+- **Update stock in inventory**:
+  ```sql
+  UPDATE Inventory SET quantity_in_stock = quantity_in_stock - 5
+  WHERE ingredient_id = 2;
+  ```
+
+### Rationale for Choosing MongoDB or Relational DB
+
+In this design:
+- **Relational DB** would work well, as the relationships between entities are structured and can benefit from relational integrity constraints.
+- **MongoDB** could also be considered if flexibility in the schema is needed, but handling joins like `Order_Items` might require embedding or more complex queries.
+
+This approach provides an efficient way to manage canteen data, ensuring seamless order processing, billing, and inventory tracking.
