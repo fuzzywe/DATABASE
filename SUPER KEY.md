@@ -200,6 +200,54 @@ ORDER_TABLE (
 - How these keys support order tracking across multiple systems
 - Why including CustomerID in super keys helps with customer-specific queries
 
+
+**Practical Application of Super Keys:**
+
+1. **Primary Super Key:**
+   - `{OrderID}`: The simplest super key in this scenario because the `OrderID` is unique for every order and can independently identify a tuple.
+
+2. **Alternative Super Keys:**
+   - `{TransactionID}`: Tracks payment details, especially useful in multi-step payment processes.
+   - `{OrderID, CustomerID}`: Useful when tracking orders based on customer-specific queries, such as viewing all orders placed by a specific customer.
+   - `{TransactionID, OrderDate}`: Supports use cases like tracking payments made on specific dates.
+
+---
+
+### **2. Interview Discussion Points**
+
+**Why is `OrderID` alone sufficient, but `TransactionID` might also be included?**
+
+- **OrderID Sufficiency:** 
+  - `OrderID` uniquely identifies each order in the system, making it a natural choice for a primary key or super key.
+  
+- **TransactionID Inclusion:**
+  - Payments may involve different workflows (e.g., credit card, refund processes). `TransactionID` can be useful for uniquely identifying the financial transaction tied to an order.
+
+---
+
+**How do these keys support order tracking across multiple systems?**
+
+- Super keys like `{TransactionID}` are critical in **payment systems**, allowing seamless integration between the order management system and payment gateways.
+- `{OrderID, CustomerID}` helps maintain **data integrity** when mapping orders back to customers, especially in scenarios involving refunds or customer service inquiries.
+- `{TransactionID, OrderDate}` enables **cross-referencing of payment records** with financial systems for auditing purposes.
+
+---
+
+**Why include `CustomerID` in some super keys?**
+
+- Including `CustomerID` in super keys facilitates **customer-specific operations**, such as:
+  - Fetching all orders for a customer.
+  - Identifying anomalies in order patterns for fraud detection.
+  - Linking customer records for personalized experiences.
+
+---
+
+### **Key Takeaways for Interview Preparation**
+- Be ready to explain why a **primary key** is a subset of a **super key** and why alternative super keys exist.
+- Highlight real-world scenarios where a specific combination of attributes serves as a **useful super key**.
+- Emphasize how **super keys** contribute to **data integrity**, **query optimization**, and **system integration** in practical systems like e-commerce, banking, or healthcare.
+
+
 ## 2. Super Keys in Real-World Scenarios
 
 ### Example 1: Hospital Management System
