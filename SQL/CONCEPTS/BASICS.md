@@ -58,8 +58,12 @@ to insert the table in particular database
 
 
 
+int for numeric
+
+varchar for string
 
 
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 37-41 screenshot](https://github.com/user-attachments/assets/e59b9e9d-eb2b-4083-8a46-bfc30d0d516d)
 
 
 
