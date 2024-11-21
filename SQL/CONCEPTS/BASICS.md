@@ -17,12 +17,12 @@ show databases;
 CREATE DATABASE trendytech;
 
 
-**which table iam to check this use **
+**which table iam to check this use**
 
 SELECT database();
 
 
-**to create table **
+**to create table**
 
 CREATE TABLE employee 
 (
@@ -31,7 +31,7 @@ age INT,
 salary INT,
 );
 
-**to see list of tables **
+**to see list of tables**
 
 show tables;
 
@@ -156,3 +156,11 @@ use command like
 
 
 
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-56-32 screenshot](https://github.com/user-attachments/assets/ae9bf310-66cf-4ebf-b375-9d75d033f9df)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-1-53 screenshot](https://github.com/user-attachments/assets/b9f2976b-5602-495a-b82b-c31a9fe68870)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-3-5 screenshot](https://github.com/user-attachments/assets/ffa13f63-b396-41c7-968e-76490d8377fd)
+
+
+![Screenshot 2024-11-21 112348](https://github.com/user-attachments/assets/4f726f41-c0da-4e4a-a2a4-3bdfda285d34)
