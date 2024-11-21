@@ -92,4 +92,15 @@ virat
 
 like '-----'  means the word should contain only 5 characters but it can be anything.
 
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 3-51-46 screenshot](https://github.com/user-attachments/assets/71591a07-4cef-4731-908b-15bafb019171)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 3-52-24 screenshot](https://github.com/user-attachments/assets/38f6ba1c-d0f5-438d-bdea-40cfbc0d11ae)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 3-55-25 screenshot](https://github.com/user-attachments/assets/95a9b95d-3644-497a-a630-aa19869497fa)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 3-55-28 screenshot](https://github.com/user-attachments/assets/e1d747ff-b1d8-4ee1-86bc-16530cb5e7c5)
+
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 3-56-6 screenshot](https://github.com/user-attachments/assets/390fd086-db00-4242-96f0-b7574d89c91d)
+
 
