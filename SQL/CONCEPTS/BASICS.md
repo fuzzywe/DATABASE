@@ -152,4 +152,7 @@ use command like
 
 ![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-47-48 screenshot](https://github.com/user-attachments/assets/535e9877-8c4c-4fa2-af49-badd7fb0cb53)
 
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-52-58 screenshot](https://github.com/user-attachments/assets/125ec5d4-2c11-448c-859f-d0c94ba74da6)
+
+
 
