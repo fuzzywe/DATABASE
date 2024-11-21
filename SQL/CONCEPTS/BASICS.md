@@ -103,4 +103,32 @@ like '-----'  means the word should contain only 5 characters but it can be anyt
 
 ![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 3-56-6 screenshot](https://github.com/user-attachments/assets/390fd086-db00-4242-96f0-b7574d89c91d)
 
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-0-43 screenshot](https://github.com/user-attachments/assets/0101ff55-8e98-4d91-9474-26af7cfee530)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-1-50 screenshot](https://github.com/user-attachments/assets/74191921-d5d8-42bc-a742-3503247c1724)
+
+
+select location, count(*) from students group by source_of_joining;
+
+this will give an error because the selecting attribute should be as group by
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-2-29 screenshot](https://github.com/user-attachments/assets/2f572488-ea6d-4732-9663-639206f28e2d)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-4-53 screenshot](https://github.com/user-attachments/assets/48545830-bf9b-4b21-bd06-c512fa46a22a)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-9-53 screenshot](https://github.com/user-attachments/assets/2beff95f-0d50-4c80-8177-8c5e6d2f22db)
+
+select MIN(years_of_exp),student_name from students; 
+
+gives an error
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-11-16 screenshot](https://github.com/user-attachments/assets/250e2fb5-f0f0-47c8-b68b-25b45c1cc5a1)
+
+select MIN(years_of_exp),student_name from students; instead of this you this
+
+select student_fname from students order by years_of_exp limit 1;
+
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-12-9 screenshot](https://github.com/user-attachments/assets/4957b6e7-6558-49fd-ae86-d1a37a554e4b)
+
 
