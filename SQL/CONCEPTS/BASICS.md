@@ -132,3 +132,24 @@ select student_fname from students order by years_of_exp limit 1;
 ![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-12-9 screenshot](https://github.com/user-attachments/assets/4957b6e7-6558-49fd-ae86-d1a37a554e4b)
 
 
+each source of joining i want to get max experienc and followed by that
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-14-43 screenshot](https://github.com/user-attachments/assets/6d75a366-4c53-4d03-aec6-488e1b382755)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-16-27 screenshot](https://github.com/user-attachments/assets/d42eaf55-36b0-4dce-a916-b563602b31f1)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-16-16 screenshot](https://github.com/user-attachments/assets/e50f9184-323b-4b6c-8c86-14b659ec2466)
+
+
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-17-30 screenshot](https://github.com/user-attachments/assets/7a1fc977-8cd1-4113-a866-d7f8506b47bf)
+
+
+timestamp is fixed whiile creating a value to change the value on timestamp doing updating values 
+use command like
+
+![Screenshot 2024-11-21 112348](https://github.com/user-attachments/assets/c0b2eedb-22b2-4eab-99da-970c56e6a2ff)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 4-47-48 screenshot](https://github.com/user-attachments/assets/535e9877-8c4c-4fa2-af49-badd7fb0cb53)
+
+
