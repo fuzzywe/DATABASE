@@ -164,3 +164,13 @@ use command like
 
 
 ![Screenshot 2024-11-21 112348](https://github.com/user-attachments/assets/4f726f41-c0da-4e4a-a2a4-3bdfda285d34)
+
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-15-38 screenshot](https://github.com/user-attachments/assets/a3f43885-f154-4555-9369-abb5576eeed0)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-18-51 screenshot](https://github.com/user-attachments/assets/953dcfd1-15b8-4cdc-8364-1293fbee1fdc)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-19-9 screenshot](https://github.com/user-attachments/assets/b7a1a569-5ba9-41fd-8416-9b8a82347fcf)
+
+
+
