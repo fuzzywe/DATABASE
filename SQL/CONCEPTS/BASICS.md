@@ -66,4 +66,30 @@ varchar for string
 ![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 37-41 screenshot](https://github.com/user-attachments/assets/e59b9e9d-eb2b-4083-8a46-bfc30d0d516d)
 
 
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 45-48 screenshot](https://github.com/user-attachments/assets/17176ad5-ada7-493b-9be6-c1103b258d2c)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 3-4-28 screenshot](https://github.com/user-attachments/assets/b01e7483-59bf-4ffd-a9bd-6cba696af745)
+
+no duplicates are there
+
+% is a wildcard character
+
+'%ra%' means the characters ra can be anywhere in the word 
+
+like virat
+
+rangi
+
+rat
+
+if the word should start with ra the 'ra%' 
+
+rahul.
+
+if end with "%at"
+
+virat
+
+like '-----'  means the word should contain only 5 characters but it can be anything.
+
 
