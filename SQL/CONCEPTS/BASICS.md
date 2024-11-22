@@ -1,4 +1,4 @@
-https://www.youtube.com/watch?v=qlkS-e5ym1w&ab_channel=SumitMittal
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-47-48 screenshot](https://github.com/user-attachments/assets/e10f0cb8-4f87-4055-a04a-4819bfb07577)https://www.youtube.com/watch?v=qlkS-e5ym1w&ab_channel=SumitMittal
 
 ![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 3-51 screenshot](https://github.com/user-attachments/assets/44316bea-bc9d-44ac-89cd-1092c890d7ea)
 
@@ -172,5 +172,23 @@ use command like
 
 ![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-19-9 screenshot](https://github.com/user-attachments/assets/b7a1a569-5ba9-41fd-8416-9b8a82347fcf)
 
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-31-11 screenshot](https://github.com/user-attachments/assets/30bbccd4-10fd-4018-9b90-d89a9d94ccf4)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-31-5 screenshot](https://github.com/user-attachments/assets/42bc0ad9-c300-484f-80d6-02ddcd2710ed)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-32-12 screenshot](https://github.com/user-attachments/assets/e9c457ee-99a3-4bf9-93c1-79bb811006bf)
+
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-34-47 screenshot](https://github.com/user-attachments/assets/7bf2f0c3-25cc-429d-bf9f-188aacd20f49)
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-45-32 screenshot](https://github.com/user-attachments/assets/d10f125e-af31-4cae-9886-af0238fd5d62)
+
+**getting error because where should be used before group by** 
+
+where clause is used to filter the individual records before aggregation.
+
+
+![SQL - Complete Course in 9 Hours _ SQL One Shot _ SQL Full Course by Sumit Sir 5-47-48 screenshot](https://github.com/user-attachments/assets/ad2d2edc-7287-4101-913b-851c1303e421)
 
 
