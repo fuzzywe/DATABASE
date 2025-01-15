@@ -1,4 +1,33 @@
-Certainly! Here are some interview questions specifically focused on normalization in database management, along with detailed answers that incorporate real-world examples:
+### 1. **What is Normalization and Why Do We Need It?**  
+**Normalization** is a process in **DBMS** used to organize data in a database to reduce **data redundancy** and improve **data integrity**. It divides large tables into smaller, related tables and links them using relationships.  
+**Why we need normalization:**
+- Eliminates **duplicate data**.
+- Reduces **inconsistencies** in data updates, deletions, and insertions.
+- **Improves query performance** and **data organization**.
+
+---
+
+### 2. **Basic Differences in Normal Forms**  
+| **Normal Form** | **Definition** | **Conditions** |
+|-----------------|----------------|----------------|
+| **1NF (First Normal Form)** | A table where all columns have **atomic values** (no repeating groups). | Each column contains unique, indivisible values. |
+| **2NF (Second Normal Form)** | A table that is in 1NF and has **no partial dependency** on any candidate key. | All non-key attributes are fully functionally dependent on the primary key. |
+| **3NF (Third Normal Form)** | A table that is in 2NF and has **no transitive dependency**. | No non-prime attribute depends on another non-prime attribute. |
+| **BCNF (Boyce-Codd Normal Form)** | A stricter version of 3NF where every determinant is a candidate key. | Each functional dependency has a super key as a determinant. |
+
+---
+
+### 3. **Types of Joins**  
+| **Join Type** | **Definition** | **Example** |
+|---------------|----------------|-------------|
+| **INNER JOIN** | Returns rows where there is a **match** in both tables. | Selects matching records from Table A and Table B. |
+| **LEFT JOIN (LEFT OUTER JOIN)** | Returns all rows from the **left table**, with matching rows from the right table (null if no match). | Selects all rows from Table A even if there is no match in Table B. |
+| **RIGHT JOIN (RIGHT OUTER JOIN)** | Returns all rows from the **right table**, with matching rows from the left table (null if no match). | Selects all rows from Table B even if there is no match in Table A. |
+| **FULL OUTER JOIN** | Returns all rows when there is a match in **either** table, filling nulls where no match exists. | Combines all rows from both tables. |
+| **CROSS JOIN** | Produces a Cartesian product of both tables (all combinations). | Returns all possible combinations of rows. |
+| **SELF JOIN** | A table is joined with itself using a condition. | Useful for hierarchical data. |
+
+These concepts form the core of **database design** and optimization strategies.
 
 ### Interview Questions on Normalization
 
