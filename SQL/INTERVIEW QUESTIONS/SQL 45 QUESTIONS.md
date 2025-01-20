@@ -68,3 +68,7 @@ INSERT INTO Scholarship (STUDENT_REF_ID, SCHOLARSHIP_AMOUNT, SCHOLARSHIP_DATE) V
 - Data is inserted exactly as shown in the provided image.
 
 You can run these SQL commands in your DBMS to create the tables and insert the values.
+
+
+
+https://www.geeksforgeeks.org/sql-query-interview-questions/
