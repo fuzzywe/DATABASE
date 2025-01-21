@@ -231,8 +231,41 @@ WHERE GPA < (
 - Use `LIMIT`/`OFFSET` or `ROW_NUMBER()` for efficiency.
 - The subquery method works even if `GPA` values are not unique but is less efficient for large datasets.
   SELECT firstName + ' ' + lastName AS COMPLETE_NAME FROM students;
-  ```
-- PostgreSQL or Oracle:
-  ```sql
-  SELECT firstName || ' ' || lastName AS COMPLETE_NAME FROM students;
-  ```
+
+  
+  To fetch the list of students with the same GPA (i.e., students who share a GPA with at least one other student), you can use the following SQL query:
+
+### **Query for Finding Students with Same GPA**
+```sql
+SELECT firstName, lastName, GPA
+FROM students
+WHERE GPA IN (
+    SELECT GPA
+    FROM students
+    GROUP BY GPA
+    HAVING COUNT(GPA) > 1
+);
+```
+
+### **Explanation**
+- **GROUP BY GPA** groups the records by GPA values.
+- **HAVING COUNT(GPA) > 1** filters the GPAs that appear more than once (i.e., shared by multiple students).
+- **WHERE GPA IN (...)** retrieves all students whose GPA matches the repeated GPAs.
+
+### **Example**
+| Student_ID | firstName | lastName | GPA |
+|------------|-----------|----------|-----|
+| 1          | Janani    | Ashok    | 9.5 |
+| 2          | Suresh    | Kumar    | 8.7 |
+| 3          | Naveen    | Kaur     | 9.5 |
+| 4          | Pooja     | Mehta    | 8.7 |
+
+The query will return:
+| firstName | lastName | GPA |
+|-----------|----------|-----|
+| Janani    | Ashok    | 9.5 |
+| Suresh    | Kumar    | 8.7 |
+| Naveen    | Kaur     | 9.5 |
+| Pooja     | Mehta    | 8.7 |
+
+This allows you to find students who have identical GPAs.
