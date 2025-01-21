@@ -165,6 +165,71 @@ SELECT CONCAT(firstName, ' ', lastName) AS COMPLETE_NAME FROM students;
 If your database does not support `CONCAT`, you might need to use `+` for SQL Server or `||` for PostgreSQL/Oracle:
 - SQL Server:
   ```sql
+
+
+
+  To find the 5th highest GPA from a table in SQL, you can use different methods depending on the database system. Here are common ways:
+
+### **Example Table: students**
+| Student_ID | firstName | lastName | GPA |
+|------------|-----------|----------|-----|
+| 1          | Janani    | Ashok    | 9.5 |
+| 2          | Suresh    | Kumar    | 8.7 |
+| 3          | Ruth      | Urs      | 9.0 |
+| 4          | Naveen    | Kaur     | 7.5 |
+| 5          | Pooja     | Mehta    | 8.9 |
+| 6          | Sanjay    | Iyer     | 8.1 |
+
+---
+
+### **1. Using `LIMIT` and `ORDER BY` (MySQL, PostgreSQL, SQLite)**
+```sql
+SELECT GPA 
+FROM students
+ORDER BY GPA DESC
+LIMIT 1 OFFSET 4;
+```
+- `ORDER BY GPA DESC` sorts the records in descending order (highest GPA first).
+- `LIMIT 1 OFFSET 4` skips the first 4 records and returns the 5th.
+
+---
+
+### **2. Using `ROW_NUMBER()` (SQL Server, PostgreSQL, Oracle)**
+```sql
+SELECT GPA 
+FROM (
+    SELECT GPA, ROW_NUMBER() OVER (ORDER BY GPA DESC) AS rank
+    FROM students
+) ranked
+WHERE rank = 5;
+```
+- `ROW_NUMBER()` assigns a unique rank to each row.
+- The outer query filters the 5th highest GPA.
+
+---
+
+### **3. Using `DISTINCT` with Subquery (Works in all databases)**
+```sql
+SELECT MAX(GPA)
+FROM students
+WHERE GPA < (
+    SELECT MAX(GPA)
+    FROM students
+    WHERE GPA < (
+        SELECT MAX(GPA)
+        FROM students
+        WHERE GPA < (
+            SELECT MAX(GPA)
+            FROM students
+        )
+    )
+);
+```
+- This nested subquery finds the maximum GPA less than the previous highest GPA repeatedly until the 5th highest is reached.
+
+### **Explanation**
+- Use `LIMIT`/`OFFSET` or `ROW_NUMBER()` for efficiency.
+- The subquery method works even if `GPA` values are not unique but is less efficient for large datasets.
   SELECT firstName + ' ' + lastName AS COMPLETE_NAME FROM students;
   ```
 - PostgreSQL or Oracle:
