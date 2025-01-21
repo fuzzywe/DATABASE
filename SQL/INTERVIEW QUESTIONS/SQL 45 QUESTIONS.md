@@ -128,3 +128,46 @@ The SQL command `SELECT MAJOR FROM STUDENT GROUP BY(MAJOR);` is used to **group 
 ### **Summary of the Purpose of Your Query**
 - `SELECT MAJOR FROM STUDENT GROUP BY(MAJOR);` lists all unique majors in the `STUDENT` table.  
 - It groups records by the `MAJOR` field, even though no aggregation is performed in this case.
+
+
+to display the first 3 rows
+
+```sql
+SELECT * FROM Student LIMIT 3;
+
+
+```
+
+
+The error in the query `select concat(firstName,'',lastName) as COMPLETE_NAME from students;` is caused by the use of an empty string (`''`) between the `firstName` and `lastName`. Most databases require a **space** between the names for proper concatenation. Here's how to fix it:
+
+### **Corrected Query**
+```sql
+SELECT CONCAT(firstName, ' ', lastName) AS COMPLETE_NAME FROM students;
+```
+
+### **Explanation**
+- **`CONCAT(firstName, ' ', lastName)`**: The space between single quotes (`' '`) adds a space between the first and last name.
+- **`AS COMPLETE_NAME`**: Renames the result column as `COMPLETE_NAME`.
+
+### **Example Data**
+| firstName | lastName |
+|-----------|----------|
+| Janani    | Ashok    |
+| Suresh    | Kumar    |
+
+### **Result**
+| COMPLETE_NAME  |
+|----------------|
+| Janani Ashok   |
+| Suresh Kumar   |
+
+If your database does not support `CONCAT`, you might need to use `+` for SQL Server or `||` for PostgreSQL/Oracle:
+- SQL Server:
+  ```sql
+  SELECT firstName + ' ' + lastName AS COMPLETE_NAME FROM students;
+  ```
+- PostgreSQL or Oracle:
+  ```sql
+  SELECT firstName || ' ' || lastName AS COMPLETE_NAME FROM students;
+  ```
